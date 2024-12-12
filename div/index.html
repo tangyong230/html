@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块级元素</title>
+    <style type="text/css">
+        div{
+            width: 800px;
+            height: 600px;
+            border:1px solid #ccc;
+        }
+        h1{
+            background-color: #aaa;
+            width: 200px;
+            display: inline-block;
+        }
+        span{
+            display: block;
+            background-color: #aaa;
+            margin-top:5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 块级元素
+      特点：1 没有设置宽的情况下，会自动扩展宽度，至到父元素的边界
+            2 独占一行 
+            3 垂直排列
+    
+        行级元素  
+         特点： 1 无法设置宽高，它的宽高由内容决定
+                2 不会独占一行
+                3 从左到右依次排列  
+
+         块级行级转换
+          块级转行级  display:inline|inline-block
+          行级转块级  display:block
+
+    -->
+    <div>
+        <h1>块级元素1</h1>
+        <h1>块级元素2</h1>
+        <h1>块级元素3</h1>
+        <hr>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+</html>

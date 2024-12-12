@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+     <!-- form 表单
+      表单元素
+      单行文本框  
+    -->
+    <!-- action 接收地址  method 提交方式：get  post -->
+
+    <!-- 表单元素进行分组 -->
+    <fieldset>
+      <!-- 分组标题 -->
+      <legend>登录信息</legend>  
+     <form action="baidu.com?wd=" method="get">
+        <!-- 单行文本框 -->
+        <label for="account">帐号：</label><input type="text" name="account" id="account"> <br>
+        <!-- 密码框 -->
+        密码：<input type="password" name="pwd"> <br>
+        <!-- 提交按钮 -->
+        <!-- <input type="submit" name="submit" value="登录"> -->
+        <!-- 重置按钮 -->
+        <input type="reset" name="reset" value="重置"> 
+        <!-- 图片按钮 -->
+        <!-- <input type="image" name="image" src="./submit.png"> -->
+        <!-- button -->
+        <button name="btn">提交</button>
+      </form>
+    </fieldset>
+
+    <fieldset>
+       <legend>个人信息</legend>
+       <form action="">
+        <!-- 单选框 -->
+        <label for="m">性别：</label><input type="radio" name="sex" value="男" checked>男
+             <input type="radio" name="sex" value="女" id="m">女
+             <br>
+             <!-- 复选框 -->
+             兴趣爱好：<input type="checkbox" name="hobby[]" value="编程">编程
+             <input type="checkbox" name="hobby[]" value="看书">看书
+             <input type="checkbox" name="hobby[]" value="篮球">篮球
+             <br>
+             <!-- 文件域  -->
+             个人照片：<input type="file" name="file">
+             <br>
+             <br>
+             <!-- 下拉列表 multiple多选 disabled-->
+             个人籍贯：<select name="place" id="" multiple>
+                      <!-- 对列表项分组 -->
+                      <optgroup label="广东省">
+                         <option value="深圳市">深圳市</option>
+                         <option value="广州市">广州市</option>
+                         <option value="广州市">广州市</option>
+                      </optgroup>
+                      <optgroup label="湖南省">
+                        <option value="长沙市">长沙市</option>
+                        <option value="广州市">广州市</option>
+                        <option value="广州市">广州市</option>
+                     </optgroup>
+                      <optgroup label="湖北省">
+                        <option value="武汉市">武汉市</option>
+                        <option value="广州市">广州市</option>
+                        <option value="广州市">广州市</option>
+                     </optgroup>
+             </select>
+             <br>
+             <br>
+         个人简介：
+         <!-- 多行文本框
+             rows 行 高  
+             cols 列 宽
+        -->
+         <textarea name="profile" id="profile" rows="10" cols="100"></textarea>
+         <br>
+       </form>
+    </fieldset>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe内联框架</title>
+</head>
+<body>
+    <!-- iframe  
+     src 引入外部地址
+     width 宽
+     height 高
+     frameborder 0不显示  1显示
+     name 指定一个名称
+    -->
+
+    
+     <!--引用页面
+         打开指定页面
+    -->
+    <ul>
+        <li><a href="../list/list.html" target="container">打开列表</a></li>
+        <li><a href="../img/index.html" target="container">打开图片页</a></li>
+        <li><a href="https://map.gaode.com" target="container">打开地图</a></li>
+    </ul>
+    <iframe name="container" src="https://map.gaode.com" style="border: none;" width="900" height="600">
+    </iframe>
+</body>
+</html>
